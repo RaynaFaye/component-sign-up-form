@@ -1,5 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: hsl(0, 100%, 74%) url(../images/bg-intro-desktop.png);
+}
+/* Container Section */
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container-intro {
+  grid-column: 2;
+  grid-row: 1 /3;
+  align-self: center;
+}
+/* Try for free Section */
+.container__try-free {
+  background: hsl(248, 32%, 49%);
+  grid-column: 3;
+}
+/* Form Section */
+.container__form {
+  background: #ffffff;
+  grid-column: 3;
+  height: 400px; /* Only temp for grid layout*/
+}
 /* Attribution section */
 .attribution {
+  margin-top: 100px;
   font-size: 11px;
   text-align: center;
 }
