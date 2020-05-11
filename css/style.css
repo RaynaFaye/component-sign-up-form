@@ -3,13 +3,16 @@ body {
   font-size: 16px;
   background: hsl(0, 100%, 74%) url(../images/bg-intro-desktop.png);
 }
+.font-weight-600 {
+  font-weight: 600;
+}
 /* Container Section */
 .container {
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-  grid-gap: 30px;
+  grid-template-columns: 125px 1fr 1fr 125px;
+  grid-gap: 25px;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 125px;
 }
 .container__intro {
   grid-column: 2;
@@ -30,12 +33,25 @@ body {
 .container__try-free {
   background: hsl(248, 32%, 49%);
   grid-column: 3;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(62, 60, 73, 0.2);
 }
 /* Form Section */
-.container__form {
+.container__form-box {
   background: #ffffff;
   grid-column: 3;
+  border-radius: 10px;
   height: 400px; /* Only temp for grid layout*/
+}
+.container__form__label {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 /* Attribution section */
 .attribution {
