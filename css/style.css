@@ -36,14 +36,21 @@ body {
   color: #ffffff;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 10px rgba(62, 60, 73, 0.2);
+  box-shadow: 0 8px rgba(62, 60, 73, 0.2);
 }
 /* Form Section */
-.container__form-box {
-  background: #ffffff;
+.container__form {
   grid-column: 3;
+  background: #ffffff;
+  box-shadow: 0 8px rgba(62, 60, 73, 0.2);
   border-radius: 10px;
-  height: 400px; /* Only temp for grid layout*/
+}
+.container__form-box {
+  padding-top: 20px;
+}
+.container__form__input-block {
+  display: grid;
+  margin: 20px 50px;
 }
 .container__form__label {
   position: absolute;
@@ -52,6 +59,44 @@ body {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+.container__form__input {
+  font-family: 'Poppins', sans-serif;
+  color: hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding: 15px 30px;
+  caret-color: hsl(248, 32%, 49%);
+}
+.container__form__input:focus {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+.container__form__submit-input {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px hsl(154, 54%, 49%);
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.container__form__submit-input:hover,
+.container__form__submit-input:focus {
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)) hsl(154, 59%, 51%);
+  cursor: pointer;
+}
+.container__form__terms-text {
+  color: hsl(246, 25%, 77%);
+  font-size: 11px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.container__form__terms-link {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
 }
 /* Attribution section */
 .attribution {
