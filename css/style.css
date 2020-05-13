@@ -107,3 +107,62 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* Media Queries */
+@media all and (max-width: 1240px) {
+  .container__intro__title {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 1140px) {
+  .container__intro__title {
+    font-size: 36px;
+  }
+  .container {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+  }
+}
+@media all and (max-width: 800px) {
+  body {
+    background: hsl(0, 100%, 74%) url(../images/bg-intro-mobile.png);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 75px;
+  }
+  .container__intro {
+    text-align: center;
+  }
+  .container__intro__title {
+    font-size: 28px;
+  }
+  .container__try-free {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container__form-box {
+    padding-top: 10px;
+  }
+  .container__form__input-block {
+    margin: 20px 30px;
+  }
+  .container__form__terms-text {
+    padding: 0 45px;
+  }
+}
+@media all and (max-width: 450px) {
+  .container__form__submit-input {
+    box-sizing: content-box;
+  }
+  .container__form__input,
+  .container__form__submit-input {
+    width: 75%;
+  }
+}
+@media all and (max-width: 370px) {
+  .container__form__submit-input {
+    white-space: normal;
+  }
+}
